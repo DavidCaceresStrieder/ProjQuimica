@@ -12,7 +12,16 @@ var oxidador
     
     oxidar = function(elemento)
     {
+        var rv = [];
         var valen = valencias[elemento.estadosDeOxidacion.length];
+        for(var i = 0;i <= valen.length; i++)
+        {
+            rv.push(valen[i].replace("-",elemento.nombre));
+        }
+        return rv;
     } 
+
 }
+
+module.export = oxidador;
 
