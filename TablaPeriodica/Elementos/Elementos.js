@@ -8,7 +8,7 @@ class Elemento {
         this.simbolo = simbolo;
         this.electronegatividad = electronegatividad;
         this.masaAtomica = masaAtomica;
-        this.estadoDeOxidacion = EstadoDeOxidacion;
+        this.estadosDeOxidacion = EstadoDeOxidacion.sort(function(a, b){return a - b});
         this.tipoElemento = TipoElementos.filter(x => x.id == tipoElemento)[0];
     }
 }
